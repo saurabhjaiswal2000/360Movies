@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>movies</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <a class="navbar-brand" href="index.html"><img class="brand-logo" src="movie.png" alt="brandlogo"></a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TVSeries</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Audio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="movies-page/gotjpg.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="movies-page/avatar.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="movies-page/godzillavskong.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="movies-page/thedarkknight.jpg" alt="fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="movies-page/adam-sandler.jpg" alt="fifth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<section class="search-page">
+<!-- Search Bar -->
+<div class="dropdown">
+  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Genre
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#Allmovie">All</a>
+    <a class="dropdown-item" href="#ActionMovie">Action</a>
+    <a class="dropdown-item" href="#DramaMovie">Drama</a>
+    <a class="dropdown-item" href="#Sci-FiMovie">Sci-Fi</a>
+  </div>
+
+<input class="search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movie names..">
+<hr>
+<!-- Movies Collection -->
+<div class="container-fluid">
+<div id="Allmovie" class="all-movies">
+  <div class="movies-action">
+    <ul id="myUL">
+      <div id="ActionMovie" class="row">
+        <!-- Action Movies -->
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/mohenjo-daro.jpg" alt="Mohenjo-Daro">
+                <figcaption class="caption">Mohenjo Daro</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/kick.jpg" alt="Kick">
+                <figcaption class="caption">Kick</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/tiger-zinda-hai.jpg" alt="Tiger Zinda Hai">
+                <figcaption class="caption">Tiger Zinda Hai</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/commando-2.jpg" alt="Commando 2">
+                <figcaption class="caption">Commando 2</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/bang-bang.jpg" alt="Bang Bang">
+                <figcaption class="caption">Bang Bang</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/aflyingjatt.jpg" alt="A Flying Jatt">
+                <figcaption class="caption">A Flying Jatt</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/hero.jpg" alt="Hero">
+                <figcaption class="caption">Hero</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/marjaavaan.jpg" alt="Mar Jaavaan">
+                <figcaption class="caption">Mar Jaavaan</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/players.jpg" alt="Players">
+                <figcaption class="caption">Players</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/action/zorawar.jpg" alt="Zorawar">
+                <figcaption class="caption">Zorawar</figcaption>
+              </figure>
+            </a></li>
+        </div>
+
+      </div>
+        <!-- Drama Movies -->
+        <div id="DramaMovie" class="row">
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/aashiqui-2.jpg" alt="Aashiqui-2">
+                <figcaption class="caption">Aashiqui-2</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/hindi-medium.jpg" alt="Hindi Medium">
+                <figcaption class="caption">Hindi Medium</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/omg.jpg" alt="OMG">
+                <figcaption class="caption">OMG-Oh My God</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/raazi.jpg" alt="Raazi">
+                <figcaption class="caption">Raazi</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/raid.jpg" alt="Raid">
+                <figcaption class="caption">Raid</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/half-girlfriend.jpg" alt="Half-Girlfriend">
+                <figcaption class="caption">Half-Girlfriend</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/ghayalonceagain.jpg" alt="GhayalOnceAgain">
+                <figcaption class="caption">Ghayal Once Again</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/bharat.jpg" alt="Bharat">
+                <figcaption class="caption">Bharat</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/jabtakhaijaan.jpg" alt="JabTakHaiJaan">
+                <figcaption class="caption">Jab Tak Hai Jaan</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/drama/loveyatri.jpg" alt="LoveYatri">
+                <figcaption class="caption">Love Yatri</figcaption>
+              </figure>
+            </a></li>
+        </div>
+
+        </div>
+        <!-- Science-Fiction -->
+        <div id="Sci-FiMovie" class="row">
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/carbon.jpg" alt="Carbon">
+                <figcaption class="caption">Carbon</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/avatar.jpg" alt="Avatar">
+                <figcaption class="caption">Avatar</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/interseller.jpg" alt="Intersellar">
+                <figcaption class="caption">Intersellar</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/pk.jpg" alt="PK">
+                <figcaption class="caption">PK</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/robot.jpg" alt="Robot">
+                <figcaption class="caption">Robot</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/jumanji.jpg" alt="Jumanji">
+                <figcaption class="caption">Jumanji</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/porobashinee.jpg" alt="Porobashinee">
+                <figcaption class="caption">Porobashinee</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/supergirl.jpg" alt="Supergirl">
+                <figcaption class="caption">Supergirl</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/valerian.jpg" alt="Valerian">
+                <figcaption class="caption">Valerian</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        <div class="col-2.5">
+          <li><a href="#">
+              <figure class="image">
+                <img class="action-category" src="movies-page/sci-fi/free-guy.jpg" alt="Free-Guy">
+                <figcaption class="caption">Free-Guy</figcaption>
+              </figure>
+            </a></li>
+        </div>
+        </div>
+      </ul>
+
+  </div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="footer">
+    <p class="footer-text"><img class="brand-logo" src="movie.png" alt="brandlogo"> powered by Movies Entertainment Portal 2021. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+    function myFunction() {
+
+      var input, filter, ul, li, a, i;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+a:hover{
+  color: #dddddd;
+}
+img{
+  height: 400px;
+}
+figure{
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+li{
+  list-style-type: none;
+}
+/* Navigation Bar */
+.navbar-brand{
+  font-weight: bold;
+}
+.brand-logo{
+  height: 30px;
+  margin-right: 10px;
+}
+/* category section */
+.category{
+  background-color: black;
+  padding: 2% 7%;
+}
+.category-title{
+  color: white;
+  font-size: 1.5rem;
+}
+.line{
+  background-color: white;
+}
+.action-category{
+  height: 200px;
+  width: 220px;
+  padding: 3px;
+}
+.drama-category{
+  height: 200px;
+  width: 220px;
+  padding: 3px;
+}
+.sci-fi-category{
+  height: 200px;
+  width: 220px;
+  padding: 3px;
+}
+
+/* footer */
+.footer{
+  background-color: #ffd66b;
+}
+.footer-text{
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+
+
+
+/* Movies page */
+.search-page{
+  background-color: black;
+  padding: 2% 2%;
+}
+.search{
+  width: 85%;
+  height: 35px;
+  text-align: center;
+  border: 2px solid yellow;
+}
+.row{
+  padding-left: 3rem;
+}
