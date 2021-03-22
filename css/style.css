@@ -82,6 +82,6 @@ li{
   .container-fluid{
     text-align: center;
   }
-  .category-title{
+  .container-fluid .category-title{
     text-align: left;
 }
