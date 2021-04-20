@@ -69,10 +69,11 @@ li{
   padding: 2% 2%;
 }
 .search{
-  width: 85%;
-  height: 35px;
+  width: 70rem;
+  height: 2.3rem;
   text-align: center;
   border: 2px solid yellow;
+  margin-left: 2rem;
 }
 .row{
   padding-left: 3rem;
