@@ -82,5 +82,6 @@ li{
 @media (max-width:980px){
   .container-fluid{
     text-align: center;
+    padding: 2% 2%;
   }
 }
